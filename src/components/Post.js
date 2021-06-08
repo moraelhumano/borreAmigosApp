@@ -39,7 +39,6 @@ class Post extends Component {
 
     sunmitPost = (e) => {
         this.handleClick();
-        this.showLogo();
         if(!this.state.title || !this.state.content){
             alert('All fields are required!');
             e.preventDefault();
