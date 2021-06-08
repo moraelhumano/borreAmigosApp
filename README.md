@@ -6,7 +6,7 @@ Creador: Mora [Instagram](https://www.instagram.com/ladelaintuicion) (Sigueme pa
 
 ## Comunidad en Facebook
 
-[Los amigos de Borre](https://www.facebook.com/groups/280809279600262).
+[Los amigos de Borre](https://www.facebook.com/groups/280809279600262){:target="_blank"}.
 
 ### Sus proyectos
 
