@@ -12,12 +12,6 @@ const ref = React.createRef();
 
 const PDF = (props) => {
 
-  // if(props.content === "Testigos del Mothman" ){
-  //     props.image = mothmanLogo;
-  // }
-
-  console.log(props)
-
   
 
   return (
@@ -30,8 +24,7 @@ const PDF = (props) => {
             <div className="credential-info">
               <div className="credential-text">
                 <p style={{marginTop:"82px"}}>{props.title}</p>
-                <p style={{marginTop:"23px"}} >{props.id}</p>
-                <p className="credential-nivel" style={{marginTop:"16px"}} >{props.content}</p>
+                <p style={{marginTop:"23px"}} >{props.date}</p>
                 <div className="image-id-content">
                   <img src={props.logoNivel} className="logoNivel"/>  
                 </div>
@@ -49,7 +42,7 @@ const PDF = (props) => {
       </div>
 
       <div style={{marginTop:"20vh"}} >
-        <Pdf targetRef={ref} filename="credencialLegendaria.png">
+        <Pdf targetRef={ref} filename="borreAmigo.pdf">
           {({ toPdf }) => <button onClick={toPdf}>Generar Credencial</button>}
         </Pdf>
       </div>

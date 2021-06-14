@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import Webcam from "react-webcam";
 import PDF from './PDF';
+import Webcam from 'react-webcam';
 
+import borreLogo from '../logoBorre.png';
 
 
 class Post extends Component {
 
     state = {
         title: '',
-        content: '',
-        id: '',
-        logoNivel: '',
+        date: '',
         postSubmitted: false,
         screenshot: null,
         tab: 0,
@@ -37,9 +36,10 @@ class Post extends Component {
 
 
 
+
     sunmitPost = (e) => {
         this.handleClick();
-        if(!this.state.title || !this.state.content){
+        if(!this.state.title || !this.state.date){
             alert('All fields are required!');
             e.preventDefault();
         }else{
@@ -50,39 +50,35 @@ class Post extends Component {
     }
 
  
+    
+    
+    
+
+
+
 
     render(){
 
         return(
             <>
                 {  !this.state.postSubmitted ? 
-                    (<div className="container">
-                        <div className="jumbotron mt-3 margirn-top-zero margirn-bottom-zero">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="well well-sm">
-                                        <form className="form-horizontal" method="post">
+                    (<div className="">
+                      <nav>
+                          <img src={borreLogo} />
+                      </nav>
+                        <div className="">
+                            <div className="">
+                                <div className="">
+                                    <div className="">
+                                        <form className="" method="post">
                                             <fieldset>
-                                                <legend className="text-center header">Agrega un nuevo miembro al culto</legend>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
                                                     <input onChange={this.onChange('title')} name="title" type="text" placeholder="Nombre del iniciado" className="form-control" />
                                                 </div>
-                                                <div className="form-group">
-                                                    <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
-                                                    <input onChange={this.onChange('id')} name="id" type="number" placeholder="id" className="form-control"  maxLength={3} />
-                                                </div>
-                                                <div className=" select-nivel-container">
-                                                    <label for="niveles">Elige el nivel del iniciado</label>
-                                                        <select onChange={this.onChange('content')}  name="content">
-                                                        <option >Selecciona un nivel</option>
-                                                        <option name="datsunName" value="Pasajeros del Datsun">Pasajeros del Datsun</option>
-                                                        <option name="poquianchinName" value="Apóstoles de las Poquianchis">Apóstoles de las Poquianchis</option>
-                                                        <option name="mothmanName" value="Testigos del Mothman">Testigos del Mothman</option>
-                                                        <option value="Cocineros del Nganga">Cocineros del Nganga</option>
-                                                        <option value="Criadores de Chupacabras">Criadores de Chupacabras</option>
-                                                        <option value="Agente Especial">Agente Especial</option>
-                                                        </select>
+                                                <div>
+                                                  <input type="date" onChange={this.onChange('date')} name="date"  
+                                                        min="1950-01-01" max="2002-12-31" />
                                                 </div>
                                                 <div>
                                                     <Webcam
@@ -90,6 +86,8 @@ class Post extends Component {
                                                         audio={false}
                                                         ref={node => this.webcam = node}
                                                         videoConstraints={this.videoConstraints}
+                                                        height={720}
+                                                        width={360}
                                                     /> 
                                                 </div>
                                                 <div className="form-group">
@@ -102,7 +100,7 @@ class Post extends Component {
                             </div>
                         </div>
                     </div>) : (
-                        <PDF title={this.state.title} content={this.state.content} id={this.state.id} logoNivel={this.state.logoNivel} screenshot={this.state.screenshot} />
+                        <PDF title={this.state.title} date={this.state.date} screenshot={this.state.screenshot} />
                     )
                 }
             </>
