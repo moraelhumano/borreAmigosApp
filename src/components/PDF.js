@@ -23,7 +23,8 @@ const PDF = (props) => {
               </div>
             <div className="credential-info">
               <div className="credential-text">
-                <p style={{marginTop:"82px"}}>{props.title}</p>
+                <p style={{marginTop:"82px"}}>{props.friend}</p>
+                <p style={{marginTop:"23px"}} >{props.food}</p>
                 <p style={{marginTop:"23px"}} >{props.date}</p>
                 <div className="image-id-content">
                   <img src={props.logoNivel} className="logoNivel"/>  
