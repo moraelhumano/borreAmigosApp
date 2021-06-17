@@ -70,15 +70,18 @@ class Post extends Component {
                             <div className="">
                                 <div className="">
                                     <div className="">
-                                        <form className="" method="post">
+                                        <div className="mt-10 text-3xl	">
+                                            <p>Únete al club de los</p>
+                                            <p>amigos de Borre</p>
+                                        </div>
+                                        <form className="mt-4" method="post">
                                             <fieldset>
                                                 <div className="form-group">
+                                                    <div>
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
                                                     <input onChange={this.onChange('title')} name="title" type="text" placeholder="Nombre del iniciado" className="form-control" />
-                                                </div>
-                                                <div>
-                                                  <input type="date" onChange={this.onChange('date')} name="date"  
-                                                        min="1950-01-01" max="2002-12-31" />
+                                                    </div>
+                                                    <input type="date" onChange={this.onChange('date')} name="date"  min="1950-01-01" max="2002-12-31" />
                                                 </div>
                                                 <div>
                                                     <Webcam
