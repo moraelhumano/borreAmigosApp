@@ -64,3 +64,110 @@ input:focus{
   align-items: center;
 }
 
+
+.background-input{
+  background: radial-gradient(circle, rgba(123,66,166,1) 0%, rgba(65,38,92,1) 50%, rgba(65,38,92,1) 100%);
+}
+
+.App {
+  text-align: center;
+}
+
+.Post{
+  background-image: url("amigodelBorre.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 375px;
+  display: table;
+  margin: 0 auto;
+}
+
+.credential{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.credential-foto{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+}
+
+.credential-foto img{
+  width: 85%;
+  height: 66%;
+  display: flex;
+}
+
+.margirn-name{
+  margin-top: 19px;
+}
+
+.credential-font{
+  font-size: 30px;
+}
+
+.recorteVideo{
+  Clip-path: inset(32px 150px 0px 108px);
+}
+
+.credential-info{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 50%;
+  margin-top: 60px;
+}
+
+.image-id-content{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+  padding-top: 8px;
+}
+
+.credential-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color:#d2d2d2;
+}
+
+.credential-nivel{
+  font-size: 20px;
+}
+
+
+.logoNivel{
+  width: 100px;
+  height: 100px;
+}
+
+
+.texto-bienvenida-container{
+  width: 100%;
+  color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+}
+
+.margirn-top-zero{
+  margin-top: 0 !important;
+}
+
+.margirn-bottom-zero{
+  margin-bottom: 0 !important;
+}
+
+.select-nivel-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -78,8 +78,9 @@ class Post extends Component {
                                         <div>
                                         <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
                                         <input className="h-8 input-form" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
+                                        <input className="h-8 input-form mt-4" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
+
                                         </div>
-                                        <input className="h-8 input-form" type="text" onChange={this.onChange('food')} name="food" />
                                         <input className="input-form mt-4 lg:mt-8" type="date" onChange={this.onChange('date')} name="date"  min="1950-01-01" max="2002-12-31" />
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
