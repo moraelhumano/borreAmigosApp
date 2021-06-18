@@ -44,6 +44,16 @@ textarea:focus, input:focus{
   outline: none;
 }
 
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
 #mora-photo{
   width: 40%;
 }
@@ -85,17 +95,16 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
-.Post{
-  background-image: url("IdBorreamigo.png");
+.credential{
+  background-image: url("IdBorreamigo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 350px;
-  display: table;
   margin: 0 auto;
 }
 
-.credential{
+.credential-info{
   height: 100%;
   width: 100%;
   display: flex;
@@ -104,10 +113,12 @@ textarea:focus, input:focus{
 
 
 .credential-foto{
-  width: 50%;
+  width: 75%;
+  height: 228px;
   display: flex;
   align-items: center;
-  padding-left: 28px;
+  padding-left: 23.5px;
+  padding-top: 50px;
 }
 
 .credential-foto img{
@@ -132,8 +143,7 @@ textarea:focus, input:focus{
   display: flex;
   justify-content: space-between;
   text-align: left;
-  width: 50%;
-  margin-top: 60px;
+  width: 100%;
 }
 
 .image-id-content{

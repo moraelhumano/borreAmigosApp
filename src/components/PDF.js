@@ -16,27 +16,19 @@ const PDF = (props) => {
 
   return (
     <>
-      <div className="Post" ref={ref}>
-          <div className="credential">
-          <div className="credential-foto">
+      <div className="credential" ref={ref}>
+          <div className="credential-info mt-16">
+            <div className="credential-foto">
                 <img src={props.screenshot} className="mora-photo"/>
-              </div>
-            <div className="credential-info">
-              <div className="credential-text">
-                <p style={{marginTop:"82px"}}>{props.friend}</p>
-                <p style={{marginTop:"23px"}} >{props.food}</p>
-                <p style={{marginTop:"23px"}} >{props.date}</p>
-                <div className="image-id-content">
-                  <img src={props.logoNivel} className="logoNivel"/>  
-                </div>
-              </div>
+            </div>
+            <div className="credential-text">
+              <p style={{marginTop:"82px"}}>{props.friend}</p>
+              <p style={{marginTop:"23px"}} >{props.food}</p>
+              <p style={{marginTop:"23px"}} >{props.date}</p>
             </div>
           </div>
           <p>
-              Bienvenido a nuestro al culto/no culto: un podcast en donde cada semana nos reunimos a escuchar como  
-              José Antonio Badía le cuenta a Eduardo Espinoza y Mario Capistran casos de crimen real, 
-              fenómenos paranormales o eventos históricos tan peculiares, notorios o fantásticos que se ganaron el 
-              título de Leyendas Legendarias.
+
             </p>
           </div>  
           <div>

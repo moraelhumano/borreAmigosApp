@@ -82,7 +82,7 @@ class Post extends Component {
                                             <input className="h-8 input-form" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
                                             <input className="h-8 input-form mt-6" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
                                         </div>
-                                        <input className="input-form mt-6 lg:mt-8" type="date" onChange={this.onChange('date')} name="date"  min="1950-01-01" max="2002-12-31" />
+                                        <input className="input-form mt-6 lg:mt-8" type="date" onChange={this.onChange('date')} name="date" placeholder="Fecha de nacimiento" min="1950-01-01" max="2002-12-31" />
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
                                         <Webcam
