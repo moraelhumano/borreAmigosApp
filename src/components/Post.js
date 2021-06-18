@@ -3,6 +3,7 @@ import PDF from './PDF';
 import Webcam from 'react-webcam';
 
 import borreLogo from '../logoBorre.png';
+import moraPhoto from '../mora.jpeg';
 
 
 class Post extends Component {
@@ -99,6 +100,24 @@ class Post extends Component {
                                 </fieldset>
                             </form>
                         </div>
+                        <footer className="h-full bg-primary-dark mt-8 pt-6 px-12">
+                            <div className="flex flex-col text-left pt-2">
+                                <div className="flex justify-between">
+                                    <img src={moraPhoto} id="mora-photo"/>  
+                                    <p className="text-white font-bold text-xl pl-8">¡Sígueme para más cosas chidas!</p>
+                                </div>
+                                <a src="" className="text-white font-bold text-xl mt-2">App creada por: @laDeLaIntuicion</a>
+                                <a src="" className="text-white font-bold text-xl mt-2">Inspirado en: @marioLopezCapi</a>
+                                <a src="" className="text-white font-bold text-xl mt-2">Ilustración de: @lavanduli</a>
+                            </div>
+                            <hr className="mt-4"/>
+                            <div className="flex justify-center mt-4 flex-col items-center pb-4">
+                                <img src={borreLogo} className="footer-logo"/>
+                                <p className="text-xl text-white text-left mt-2">
+                                    Esta es una fanpage, no es un producto oficial
+                                </p>
+                            </div>
+                        </footer>
                     </div>) : (
                         <PDF friend={this.state.friend} date={this.state.date} screenshot={this.state.screenshot} food={this.state.food} />
                     )

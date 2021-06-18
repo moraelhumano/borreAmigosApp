@@ -19,7 +19,7 @@ const PDF = (props) => {
       <div className="Post" ref={ref}>
           <div className="credential">
           <div className="credential-foto">
-                <img src={props.screenshot} className=""/>
+                <img src={props.screenshot} className="mora-photo"/>
               </div>
             <div className="credential-info">
               <div className="credential-text">
