@@ -72,21 +72,21 @@ class Post extends Component {
                             <div className="mt-10 text-3xl flex flex-col justify-center items-center">
                                 <p>Únete al club de los</p>
                                 <p>amigos de Borre</p>
+                                <hr className="mt-2 w-8 h-0.5 bg-primary-dark" />
                             </div>
-                            <form className="mt-4" method="post">
+                            <form className="mt-6" method="post">
                                 <fieldset>
                                     <div className="flex flex-col justify-center items-center">
-                                        <div>
-                                        <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
-                                        <input className="h-8 input-form" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
-                                        <input className="h-8 input-form mt-4" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
-
+                                        <div className="items-center">
+                                            <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
+                                            <input className="h-8 input-form" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
+                                            <input className="h-8 input-form mt-6" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
                                         </div>
-                                        <input className="input-form mt-4 lg:mt-8" type="date" onChange={this.onChange('date')} name="date"  min="1950-01-01" max="2002-12-31" />
+                                        <input className="input-form mt-6 lg:mt-8" type="date" onChange={this.onChange('date')} name="date"  min="1950-01-01" max="2002-12-31" />
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
                                         <Webcam
-                                            className="recorte-video w-5/6"
+                                            className="recorte-video h-52 w-5/6"
                                             audio={false}
                                             ref={node => this.webcam = node}
                                             videoConstraints={this.videoConstraints}
@@ -100,20 +100,22 @@ class Post extends Component {
                                 </fieldset>
                             </form>
                         </div>
-                        <footer className="h-full bg-primary-dark mt-8 pt-6 px-12">
+                        <footer className="h-full bg-primary-dark mt-8 pt-6 px-6">
                             <div className="flex flex-col text-left pt-2">
-                                <div className="flex justify-between">
-                                    <img src={moraPhoto} id="mora-photo"/>  
-                                    <p className="text-white font-bold text-xl pl-8">¡Sígueme para más cosas chidas!</p>
+                                <a  href="https://www.instagram.com/ladelaintuicion/">
+                                <div className="flex flex-col">
+                                    <p className="text-white font-bold text-l text-center">¡Sígueme en insta para más cosas chidas!</p>
+                                    <img src={moraPhoto} id="mora-photo" className="self-center mt-4"/>  
+                                    <p className="text-white font-bold text-l mt-4">App creada por: @laDeLaIntuicion</p>
                                 </div>
-                                <a src="" className="text-white font-bold text-xl mt-2">App creada por: @laDeLaIntuicion</a>
-                                <a src="" className="text-white font-bold text-xl mt-2">Inspirado en: @marioLopezCapi</a>
-                                <a src="" className="text-white font-bold text-xl mt-2">Ilustración de: @lavanduli</a>
+                                </a>
+                                <a href="https://www.instagram.com/mariolopezcapi/" className="text-white font-bold text-base mt-2">Inspirado en: @marioLopezCapi</a>
+                                <a href="https://www.instagram.com/lavanduli/" className="text-white font-bold text-base mt-2">Ilustración de: @lavanduli</a>
                             </div>
                             <hr className="mt-4"/>
                             <div className="flex justify-center mt-4 flex-col items-center pb-4">
                                 <img src={borreLogo} className="footer-logo"/>
-                                <p className="text-xl text-white text-left mt-2">
+                                <p className="text-base text-white text-left mt-2">
                                     Esta es una fanpage, no es un producto oficial
                                 </p>
                             </div>
