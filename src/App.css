@@ -113,17 +113,17 @@ input[type="date"]:valid:before {
 
 
 .credential-foto{
-  width: 75%;
-  height: 228px;
+  width: 135px;
+  height: 251px;
   display: flex;
   align-items: center;
-  padding-left: 23.5px;
-  padding-top: 50px;
+  padding-left: 24.5px;
+  padding-top: 15px;
 }
 
 .credential-foto img{
-  width: 85%;
-  height: 66%;
+  width: 100%;
+  height: 49%;
   display: flex;
 }
 
@@ -154,11 +154,14 @@ input[type="date"]:valid:before {
 }
 
 .credential-text{
-  width: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 30px;
-  color:#d2d2d2;
+  justify-content: center;
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 26px;
+  line-height: 20px;
+  width: 52%;
 }
 
 .credential-nivel{
@@ -179,6 +182,12 @@ input[type="date"]:valid:before {
   justify-content: center;
 }
 
+.text-food{
+  position: absolute;
+  top: 275.2px;
+  left: 210px;
+}
+
 .margirn-top-zero{
   margin-top: 0 !important;
 }
@@ -187,16 +196,11 @@ input[type="date"]:valid:before {
   margin-bottom: 0 !important;
 }
 
-.select-nivel-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
 
 .bg-primary-dark{
   background-color: #0B0D17;
 }
+
 
 .footer-logo{
   width: 60%;

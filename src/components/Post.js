@@ -12,6 +12,8 @@ class Post extends Component {
         friend: '',
         date: '',
         food: '',
+        idNumber: 420,
+        finishDate: "04/20/22",
         postSubmitted: false,
         screenshot: null,
         tab: 0,
@@ -121,7 +123,7 @@ class Post extends Component {
                             </div>
                         </footer>
                     </div>) : (
-                        <PDF friend={this.state.friend} date={this.state.date} screenshot={this.state.screenshot} food={this.state.food} />
+                        <PDF friend={this.state.friend} date={this.state.date} screenshot={this.state.screenshot} food={this.state.food} idNumber={this.state.idNumber} finishDate={this.state.finishDate} />
                     )
                 }
             </>

@@ -22,9 +22,11 @@ const PDF = (props) => {
                 <img src={props.screenshot} className="mora-photo"/>
             </div>
             <div className="credential-text">
-              <p style={{marginTop:"82px"}}>{props.friend}</p>
-              <p style={{marginTop:"23px"}} >{props.food}</p>
-              <p style={{marginTop:"23px"}} >{props.date}</p>
+              <p style={{ paddingLeft: '42px', paddingTop:'5px'}}>{props.friend}</p>
+              <p style={{ paddingLeft: '66px', paddingTop:'0px'}} >{props.date}</p>
+              <p style={{ paddingLeft: '80px', paddingTop:'0px'}}>{props.finishDate}</p>
+              <p>{props.idNumber }</p>
+              <p className="text-food text-white font-extrabold">{props.food}</p>
             </div>
           </div>
           <p>
