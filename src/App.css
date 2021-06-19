@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    background-color: #f1f5f9;
 }
 
 p{
@@ -16,7 +17,7 @@ nav{
 }
 
 nav img{
-  width: 40%;
+  width: 35%;
 }
 
 
@@ -54,6 +55,42 @@ input[type="date"]:valid:before {
   content: "";
 }
 
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type=date]{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=date]:focus, input:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
 #mora-photo{
   width: 40%;
 }
@@ -61,7 +98,7 @@ input[type="date"]:valid:before {
 .input-form{
   width: 80vw;
   height: 40px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 5px;
   padding: 0 15px;
 }

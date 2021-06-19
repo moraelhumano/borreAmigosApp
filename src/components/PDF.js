@@ -1,6 +1,9 @@
 import React from 'react';
 import Pdf from "react-to-pdf";
 
+import Navbar from './Navbar'
+
+
 
 
 const ref = React.createRef();
@@ -16,6 +19,7 @@ const PDF = (props) => {
 
   return (
     <>
+      <Navbar/>
       <div className="credential" ref={ref}>
           <div className="credential-info mt-16">
             <div className="credential-foto">

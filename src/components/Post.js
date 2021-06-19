@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PDF from './PDF';
 import Webcam from 'react-webcam';
 
+import Navbar from './Navbar'
+
 import borreLogo from '../logoBorre.png';
 import moraPhoto from '../mora.jpeg';
 
@@ -67,9 +69,7 @@ class Post extends Component {
             <>
                 {  !this.state.postSubmitted ? 
                     (<div className="">
-                      <nav>
-                          <img src={borreLogo} />
-                      </nav>
+                        <Navbar/>
                         <div className="">
                             <div className="mt-10 text-3xl flex flex-col justify-center items-center">
                                 <p>Únete al club de los</p>
@@ -88,14 +88,14 @@ class Post extends Component {
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
                                         <Webcam
-                                            className="recorte-video h-52 w-5/6"
+                                            className="recorte-video h-52 w-5/6 shadow-xl"
                                             audio={false}
                                             ref={node => this.webcam = node}
                                             videoConstraints={this.videoConstraints}
                                             minScreenshotHeight={100}
                                             minScreenshotWidth={260}
                                         /> 
-                                        <a type="button" onClick={this.sunmitPost} className="button-photo mt-8">
+                                        <a type="button" onClick={this.sunmitPost} className="button-photo mt-8 shadow-lg">
                                             <b>Tomar foto y enviar</b>
                                         </a>
                                     </div>
@@ -105,19 +105,17 @@ class Post extends Component {
                         <footer className="h-full bg-primary-dark mt-8 pt-6 px-6">
                             <div className="flex flex-col text-left pt-2">
                                 <a  href="https://www.instagram.com/ladelaintuicion/">
-                                <div className="flex flex-col">
-                                    <p className="text-white font-bold text-l text-center">¡Sígueme en insta para más cosas chidas!</p>
-                                    <img src={moraPhoto} id="mora-photo" className="self-center mt-4"/>  
-                                    <p className="text-white font-bold text-l mt-4">App creada por: @laDeLaIntuicion</p>
-                                </div>
+                                    <div className="flex flex-col">
+                                        <p className="text-white font-bold text-l text-center">¡Sígueme en insta para más cosas chidas!</p>
+                                        <p className="text-white font-bold text-l mt-4">App creada por: @laDeLaIntuicion</p>
+                                    </div>
                                 </a>
                                 <a href="https://www.instagram.com/mariolopezcapi/" className="text-white font-bold text-base mt-2">Inspirado en: @marioLopezCapi</a>
                                 <a href="https://www.instagram.com/lavanduli/" className="text-white font-bold text-base mt-2">Ilustración de: @lavanduli</a>
                             </div>
                             <hr className="mt-4"/>
                             <div className="flex justify-center mt-4 flex-col items-center pb-4">
-                                <img src={borreLogo} className="footer-logo"/>
-                                <p className="text-base text-white text-left mt-2">
+                                <p className="text-base text-white text-left mt-2 mb-1">
                                     Esta es una fanpage, no es un producto oficial
                                 </p>
                             </div>
