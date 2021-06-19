@@ -35,18 +35,24 @@ const PDF = (props) => {
               <p className="text-food text-white font-extrabold text-food" style={{color:'white' }}>{props.food}</p>
             </div>
           </div>
-          <p>
-
-            </p>
           </div>  
-          <div>
-      </div>
+          <div className="flex flex-col text-left px-4 mt-6">
+              <p className=" self-center font-bold text-lg">
+                <b>¡Ahora ya eres parte los amigos de borre!</b>
+              </p>
+              <b className="font-bold">
+                <p>Instrucciones:</p>
+              </b>
+              <p>Saca un screenshot de tu ID y compartela en Instagram (No olvides etiquetarnos ;D)</p>
+              <p>También puedes compartirla en el grupo oficial en Facebook</p>
+              <p>Nos mantenemos mejorando el sistema, prueba descargando tuID en PDF ;)</p>
+          </div>
 
-      <div style={{marginTop:"20vh"}} >
-        <Pdf targetRef={ref} filename="borreAmigo.pdf">
-          {({ toPdf }) => <button onClick={toPdf}>Generar Credencial</button>}
-        </Pdf>
-      </div>
+          <div className="flex justify-center w-full mt-6" >
+            <Pdf targetRef={ref} filename="borreAmigo.pdf">
+              {({ toPdf }) => <button className="button-photo shadow-lg" onClick={toPdf}>Generar Credencial</button>}
+            </Pdf>
+          </div>
       <Footer />
     </>
   );

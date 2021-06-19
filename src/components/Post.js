@@ -81,10 +81,10 @@ class Post extends Component {
                                     <div className="flex flex-col justify-center items-center">
                                         <div className="items-center">
                                             <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
-                                            <input className="h-8 input-form" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
-                                            <input className="h-8 input-form mt-6" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
+                                            <input className="h-8 input-form px-2" onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
+                                            <input className="h-8 input-form mt-6 px-2" type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
                                         </div>
-                                        <input className="input-form mt-6 lg:mt-8" type="date" onChange={this.onChange('date')} name="date" placeholder="Fecha de nacimiento" min="1950-01-01" max="2002-12-31" />
+                                        <input className="input-form mt-6 lg:mt-8 px-2" type="date" onChange={this.onChange('date')} name="date" placeholder="Fecha de nacimiento" min="1950-01-01" max="2002-12-31" />
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
                                         <Webcam
