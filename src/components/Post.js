@@ -88,7 +88,7 @@ class Post extends Component {
                                     </div>
                                     <div className="mt-10 flex justify-center flex-col items-center">
                                         <Webcam
-                                            className="recorte-video h-52 shadow-xl"
+                                            className="recorte-video h-52 w-5/6 shadow-xl"
                                             audio={false}
                                             ref={node => this.webcam = node}
                                             videoConstraints={this.videoConstraints}
