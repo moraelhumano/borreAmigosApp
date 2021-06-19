@@ -30,7 +30,7 @@ const PDF = (props) => {
               <p style={{ paddingLeft: '66px', paddingTop:'0px'}} >{props.date}</p>
               <p style={{ paddingLeft: '80px', paddingTop:'0px'}}>{props.finishDate}</p>
               <p>{props.idNumber }</p>
-              <p className="text-food text-white font-extrabold" style={{color:'white' }}>{props.food}</p>
+              <p className="text-food text-white font-extrabold text-food" style={{color:'white' }}>{props.food}</p>
             </div>
           </div>
           <p>
