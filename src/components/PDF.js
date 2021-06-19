@@ -2,6 +2,8 @@ import React from 'react';
 import Pdf from "react-to-pdf";
 
 import Navbar from './Navbar'
+import Footer from './Footer'
+
 
 
 
@@ -45,7 +47,7 @@ const PDF = (props) => {
           {({ toPdf }) => <button onClick={toPdf}>Generar Credencial</button>}
         </Pdf>
       </div>
-
+      <Footer />
     </>
   );
 }
