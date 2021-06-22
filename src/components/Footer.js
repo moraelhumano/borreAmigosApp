@@ -9,12 +9,12 @@ class Footer extends Component {
 
         return(
             <>
-            <footer className="h-full bg-primary-dark mt-8 pt-6 px-6">
+            <footer className="h-full bg-primary-dark pt-6 px-6">
                 <div className="flex flex-col pt-2">
-                    <p className="text-white font-bold text-l text-center mb-4">¡Sígueme en insta para más cosas chidas!</p>
-                    <div className="flex flex-col">
+                    <p className="text-white font-bold text-center mb-4">¡Sígueme en insta para más cosas chidas!</p>
+                    <div className="flex flex-col text-center">
                         <a  href="https://www.instagram.com/ladelaintuicion/">
-                            <p className="text-white font-bold text-l ">App creada por: @laDeLaIntuicion</p>
+                            <p className="text-white font-bold">App creada por: @laDeLaIntuicion</p>
                         </a>
                         <a href="https://www.instagram.com/mariolopezcapi/" className="text-white font-bold text-base">Inspirado en: @marioLopezCapi</a>
                         <a href="https://www.instagram.com/lavanduli/" className="text-white font-bold text-base">Ilustración de: @lavanduli</a>

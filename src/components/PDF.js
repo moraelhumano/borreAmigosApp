@@ -22,7 +22,7 @@ const PDF = (props) => {
   return (
     <>
       <Navbar/>
-      <div className="credential" ref={ref}>
+      <div className="credential pb-6" ref={ref}>
           <div className="credential-info mt-16">
             <div className="credential-foto">
                 <img src={props.screenshot} className="mora-photo"/>
@@ -36,7 +36,7 @@ const PDF = (props) => {
             </div>
           </div>
           </div>  
-          <div className="flex flex-col text-left px-4 mt-6">
+          <div className="flex flex-col md:justify-center text-left px-10 md:px-10 mt-6">
               <p className=" self-center font-bold text-lg">
                 <b>¡Ahora ya eres parte los amigos de borre!</b>
               </p>
@@ -48,7 +48,7 @@ const PDF = (props) => {
               <p>Nos mantenemos mejorando el sistema, prueba descargando tuID en PDF ;)</p>
           </div>
 
-          <div className="flex justify-center w-full mt-6" >
+          <div className="flex justify-center w-full mt-6 pb-6" >
             <Pdf targetRef={ref} filename="borreAmigo.pdf">
               {({ toPdf }) => <button className="button-photo shadow-lg" onClick={toPdf}>Generar Credencial</button>}
             </Pdf>

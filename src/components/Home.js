@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Borre from '../../src/borre.png'
+import Borre from '../../src/borre.png';
+import BigFoodBG from '../../src/bigfood.jpeg'
 
 import {
     BrowserRouter as Router,
@@ -21,12 +22,12 @@ class Home extends Component {
         return(
             <>
             <Navbar />
-            <section className="font-sans antialiased text-gray-900 leading-normal tracking-wider md:mt-8">
-                <div className="max-w-4xl flex items-center h-auto lg:h-auto flex-wrap mx-auto  lg:my-0 mt-20">
-                    <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+            <section className="font-sans antialiased text-gray-900 leading-normal tracking-wider pb-6">
+                <div className="max-w-4xl flex items-center h-auto lg:h-auto flex-wrap mx-auto  lg:my-0 pb-10">
+                    <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl mt-20 bg-white opacity-75 mx-6 lg:mx-0">
                         <div className="p-4 md:p-12 text-center lg:text-left">
-                            <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: `url(${Borre})`}}></div>
-                                <h1 className="text-3xl font-bold pt-8 lg:pt-0">Mario "El borre" Capistrán</h1>
+                            <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center pt-20" style={{ backgroundImage: `url(${Borre})`}}></div>
+                                <h1 className="text-3xl font-bold pt-8 lg:pt-0">Mario "El Borre" Capistrán</h1>
                                 <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
                                     <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
                                         <svg className="h-6 fill-current font-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -49,7 +50,7 @@ class Home extends Component {
                                     </p>
                                     <div className="pt-6 pb-6 flex justify-center md:block">
                                         <Link to="/amigos">
-                                            <button className="button-photo shadow-lg">
+                                            <button className="button-photo shadow-lg opacity-100">
                                                 Hazte amigo
                                             </button> 
                                         </Link>

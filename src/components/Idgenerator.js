@@ -46,7 +46,7 @@ class Post extends Component {
     sunmitPost = (e) => {
         this.handleClick();
         if(!this.state.friend || !this.state.date || !this.state.food){
-            alert('All fields are required!');
+            alert('Ingresa todos los datos compa :)');
             e.preventDefault();
         }else{
             this.setState({
@@ -70,7 +70,7 @@ class Post extends Component {
                 {  !this.state.postSubmitted ? 
                     (<div className="">
                         <Navbar/>
-                        <div className="">
+                        <div className="pb-6">
                             <div className="mt-10 text-3xl flex flex-col justify-center items-center">
                                 <p>Únete al club de los</p>
                                 <p>amigos de Borre</p>
@@ -81,8 +81,8 @@ class Post extends Component {
                                     <div className="flex flex-col justify-center items-center">
                                         <div className="items-center">
                                             <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
-                                            <input className="h-8 input-form w-4/5 lg:w-full px-4 " onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
-                                            <input className="h-8 input-form w-4/5 lg:w-full mt-6 px-4 " type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
+                                            <input className="h-8 input-form w-4/5 lg:w-full px-4 " maxLength={"15"} onChange={this.onChange('friend')} name="friend" type="text" placeholder="Nombre"/>
+                                            <input className="h-8 input-form w-4/5 lg:w-full mt-6 px-4 " maxLength={"15"} type="text" onChange={this.onChange('food')} name="food" placeholder="En caso de pálida..."/>
                                             <input className="h-8 input-form w-4/5 lg:w-full mt-6 px-4 " type="date" onChange={this.onChange('date')} name="date" placeholder="Fecha de nacimiento" min="1950-01-01" max="2002-12-31" />
                                         </div>
                                     </div>
