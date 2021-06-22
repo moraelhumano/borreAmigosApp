@@ -246,6 +246,9 @@ input[type=date]:focus, input:focus {
   background-color: #0B0D17;
 }
 
+.font-red{
+  color: #FF5252;
+}
 
 
 .footer-logo{

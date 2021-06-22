@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import borreLogo from '../logoBorre.png';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 
 class Navbar extends Component {
 
@@ -9,8 +16,10 @@ class Navbar extends Component {
 
         return(
             <>
-                <nav className="shadow-lg">
-                    <img className="nav" src={borreLogo} />
+                <nav className="shadow-lg md:justify-between md:px-6 sm:justify-center">
+                    <Link to="/home">
+                        <img className="nav w-32" src={borreLogo} />
+                    </Link>
                 </nav>
             </>
         );
