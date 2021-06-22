@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './components/Post';
+import Idgenerator from './components/Idgenerator';
 import Home from './components/Home'
 import './App.css';
 
@@ -15,14 +15,18 @@ function App() {
   return (
     <Router>
 
-      <Route path="/">
+     <Switch>
+       
+     <Route exact path="/">
         <Home />
       </Route>
+      
       <Route path="/amigos">
         <div className="App">
-        <Post/>
+        <Idgenerator/>
         </div>
       </Route>
+     </Switch>
     </Router>
   );
 }

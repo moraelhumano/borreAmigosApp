@@ -17,7 +17,7 @@ class Navbar extends Component {
         return(
             <>
                 <nav className="shadow-lg md:justify-between md:px-6 sm:justify-center">
-                    <Link to="/home">
+                    <Link to="/">
                         <img className="nav w-32" src={borreLogo} />
                     </Link>
                 </nav>
