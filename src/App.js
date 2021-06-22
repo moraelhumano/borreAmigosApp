@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
 
-      <Route path="/home">
+      <Route path="/">
         <Home />
       </Route>
       <Route path="/amigos">
