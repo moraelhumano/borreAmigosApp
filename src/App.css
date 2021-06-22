@@ -95,6 +95,13 @@ input[type=date]:focus, input:focus {
   width: 40%;
 }
 
+#background-home{
+  background-image: url('../src/LLBG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .input-form{
   width: 80vw;
   height: 40px;
@@ -238,6 +245,7 @@ input[type=date]:focus, input:focus {
 .bg-primary-dark{
   background-color: #0B0D17;
 }
+
 
 
 .footer-logo{

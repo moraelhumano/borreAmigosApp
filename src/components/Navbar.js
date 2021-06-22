@@ -10,7 +10,7 @@ class Navbar extends Component {
         return(
             <>
                 <nav className="shadow-lg">
-                    <img src={borreLogo} />
+                    <img className="nav" src={borreLogo} />
                 </nav>
             </>
         );

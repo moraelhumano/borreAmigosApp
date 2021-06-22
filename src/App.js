@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './components/Post';
+import Home from './components/Home'
 import './App.css';
 
 import {
@@ -15,13 +16,12 @@ function App() {
     <Router>
 
       <Route path="/home">
-        <h1>Hola mundo</h1>
+        <Home />
       </Route>
       <Route path="/amigos">
-      <div className="App">
-      <Post/>
-      </div>
-        
+        <div className="App">
+        <Post/>
+        </div>
       </Route>
     </Router>
   );
