@@ -10,9 +10,9 @@ class Footer extends Component {
         return(
             <>
             <footer className="h-full bg-primary-dark mt-8 pt-6 px-6">
-                <div className="flex flex-col md:justify-around text-left pt-2">
+                <div className="flex flex-col pt-2">
                     <p className="text-white font-bold text-l text-center mb-4">¡Sígueme en insta para más cosas chidas!</p>
-                    <div className="flex justify-around">
+                    <div className="flex flex-col">
                         <a  href="https://www.instagram.com/ladelaintuicion/">
                             <p className="text-white font-bold text-l ">App creada por: @laDeLaIntuicion</p>
                         </a>
@@ -22,7 +22,7 @@ class Footer extends Component {
                 </div>
                 <hr className="mt-4"/>
                 <div className="flex justify-center mt-4 flex-col items-center pb-4">
-                    <p className="text-base text-white text-left mt-2 mb-1">
+                    <p className="text-base text-white text-center md:text-left mt-2 mb-1">
                         Esta es una fanpage, no es un producto oficial
                     </p>
                 </div>
