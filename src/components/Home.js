@@ -29,6 +29,13 @@ class Home extends Component {
                             <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center pt-20" style={{ backgroundImage: `url(${Borre})`}}></div>
                                 <h1 className="text-3xl font-bold pt-8 lg:pt-0">Mario "El Borre" Capistrán</h1>
                                 <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+                                    <p className="pt-4 text-sm">
+                                        Originario de <b>Ciudad Juárez</b>, es conocido por ser una criatura divina, pachoncita y 
+                                        cruel. Vivió toda su vida en Ciudad Juárez hasta que decidió emprender un viaje más allá 
+                                        del que conocía en los <b>hongos</b> llegando al estado de <b>SLP</b>. Cuando regresó a su amado Juaritos se dedicó a 
+                                        encontrar el vaso de chocomilk perfecto y por fin lo encontró en el <b>cariño</b> de la nueva familia que había formado: <b>Leyendas Legendarias</b>. 
+                                        Se casó y ahora es <b>feliz con un hijo</b>, esposa y por fin encontró lo que siempre había buscado: un trabajo donde <b>lo tratan como humano</b>.
+                                    </p>
                                     <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
                                         <svg className="h-6 fill-current font-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
@@ -40,14 +47,15 @@ class Home extends Component {
                                             <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
                                             <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
                                         </svg>
-                                            Locutor</p>
-                                    <p className="pt-4 text-sm">
-                                        Originario de Ciudad Juárez, es conocido por ser una criatura divina, pachoncita y 
-                                        cruel. Vivió toda su vida en Ciudad Juárez hasta que decidió emprender un viaje más allá 
-                                        del que conocía en los hongos llegando al estado de SLP. Cuando regresó a su amado Juaritos se dedicó a 
-                                        encontrar el vaso de chocomilk perfecto y por fin lo encontró en el cariño de la nueva familia que había formado: Leyendas Legendarias. 
-                                        Se casó y ahora es feliz con un hijo, esposa y por fin encontró lo que siempre había buscado: un trabajo donde lo tratan como humano.
-                                    </p>
+                                            Locutor en:</p>
+                                            <div>
+                                                <ul className="flex flex-col list-disc md:pl-6 md:mt-4">
+                                                    <li><a href="https://www.youtube.com/c/leyendaslegendarias/videos" className="underline">Leyendas Legendarias</a></li>
+                                                    <li><a href="https://www.youtube.com/watch?v=3g3ec_pZ9tc&list=PLyyd3ce1KHvoC-idbKstXd7LBv0RK7u5I" className="underline">Historias del más acá</a></li>
+                                                    <li><a href="https://www.youtube.com/channel/UCKxteDMWj-d7JDpkTwMxUIQ" className="underline">¿Qué fue de ellos?</a></li>
+                                                </ul> 
+                                            </div>
+
                                     <div className="pt-6 pb-6 flex justify-center md:block">
                                         <Link to="/amigos">
                                             <button className="button-photo shadow-lg opacity-100">
