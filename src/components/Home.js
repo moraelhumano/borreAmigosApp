@@ -59,7 +59,7 @@ class Home extends Component {
                                     <div className="pt-6 pb-6 flex justify-center md:block">
                                         <Link to="/amigos">
                                             <button className="button-photo shadow-lg opacity-100">
-                                                Hazte amigo
+                                                ¡Hazte amigo!
                                             </button> 
                                         </Link>
                                     </div>
