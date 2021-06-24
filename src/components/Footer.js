@@ -23,7 +23,7 @@ class Footer extends Component {
                 <hr className="mt-4"/>
                 <div className="flex justify-center mt-4 flex-col items-center pb-4">
                     <p className="text-base text-white text-center md:text-left mt-2 mb-1">
-                        Esta es una fanpage, no es un producto oficial
+                        Esta es una fanpage, no es un sitio oficial
                     </p>
                 </div>
             </footer>

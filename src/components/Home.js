@@ -49,7 +49,7 @@ class Home extends Component {
                                         </svg>
                                             Locutor en:</p>
                                             <div>
-                                                <ul className="flex flex-col list-disc md:pl-6 md:mt-4">
+                                                <ul className="flex flex-col md:list-disc md:pl-6 mt-4">
                                                     <li><a href="https://www.youtube.com/c/leyendaslegendarias/videos" className="underline">Leyendas Legendarias</a></li>
                                                     <li><a href="https://www.youtube.com/watch?v=3g3ec_pZ9tc&list=PLyyd3ce1KHvoC-idbKstXd7LBv0RK7u5I" className="underline">Historias del más acá</a></li>
                                                     <li><a href="https://www.youtube.com/channel/UCKxteDMWj-d7JDpkTwMxUIQ" className="underline">¿Qué fue de ellos?</a></li>
