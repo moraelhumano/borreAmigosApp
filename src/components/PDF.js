@@ -43,7 +43,7 @@ const PDF = (props) => {
               <b className="font-bold">
                 <p>Instrucciones:</p>
               </b>
-              <p>Saca un screenshot de tu ID y compartela en Instagram (No olvides etiquetarnos ;D)</p>
+              <p>Saca un screenshot de tu ID y compartela en Instagram (No olvides etiquetarnos ;D) <a href="https://www.facebook.com/groups/280809279600262/" className="text-blue-700 underline">El Borre</a><a href="https://www.facebook.com/groups/280809279600262/" className="text-blue-700 underline ml-2">El Programador :D </a></p>
               <p>También puedes compartirla en el grupo oficial en <a href="https://www.facebook.com/groups/280809279600262/" className="text-blue-700 underline">Facebook</a> </p>
               <p>Nos mantenemos mejorando el sistema, prueba descargando tuID en PDF ;)</p>
           </div>
